@@ -1,84 +1,36 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Business</title>
+  <title>77club</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<Header>
-<header class="header">
-  <div class="logo">OnlineBiz</div>
-  <nav>
-  <a href="#">Home</a>
-  <a href="#">Products</a>
-  <a href="#">How It Works</a>
-  <a href="#">Contact</a>
-  </nav>
-</header>
+<div class="game-box">
+  <h1>77club</h1>
 
-<Hero Section>
-<section class="hero">
-  <h1>Start Your Online Business Today</h1>
-  <p>Earn Money • Work From Home • 100% Online</p>
-  <a class="btn" href="#">Join Now</a>
-</section>
-
-<Features>
-<section class="features">
-  <div class="box">
-  <h3>Low Investment</h3>
-  <p>Start with minimum cost</p>
-  </div>
-  <div class="box">
-  <h3>High Profit</h3>
-  <p>Unlimited earning potential</p>
-  </div>
-  <div class="box">
-  <h3>24/7 Income</h3>
-  <p>Earn even while sleeping</p>
-  </div>
-</section>
-
-<Products / Offers>
-<section class="products">
-  <h2>Our Top Offers</h2>
-  <div class="product-list">
-
-  <div class="product">
-  <h3>Affiliate Program</h3>
-  <p>Earn commission per sale</p>
-  <button>Get Link</button>
+  <div class="balance">
+    Balance: <span id="balance">100</span> Points
   </div>
 
-  <div class="product">
-  <h3>Digital Course</h3>
-  <p>Learn & earn online</p>
-  <button>Buy Now</button>
+  <div class="timer">
+    Time Left: <span id="time">30</span>
   </div>
 
-  <div class="product">
-  <h3>AdSense Website</h3>
-  <p>Earn from ads traffic</p>
-  <button>Learn More</button>
+  <div class="buttons">
+    <button class="red" onclick="selectColor('Red')">Red</button>
+    <button class="violet" onclick="selectColor('Blue')">Violet</button>
+    <button class="green" onclick="selectColor('Green')">Green</button>
+  
   </div>
 
+  <div class="result">
+    <p>Your Choice: <span id="userChoice">-</span></p>
+    <p>Result: <span id="gameResult">-</span></p>
+    <p>Status: <span id="status">Waiting...</span></p>
   </div>
-</section>
+</div>
 
-<Call to Action>
-<section class="cta">
-  <h2>Ready to Earn Online?</h2>
-  <p>No experience required</p>
-  <a class="btn dark" href="#">Start Now</a>
-</section>
-
-<Footer>
-<footer>
-  <p>© 2026 OnlineBiz | All Rights Reserved</p>
-</footer>
-
+<script src="game.js"></script>
 </body>
 </html>
